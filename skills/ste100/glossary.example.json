@@ -1,0 +1,32 @@
+{
+  "_comment": "Copy this file, edit it for your project, and pass it with --glossary. Refer to references/dictionary-and-scope.md.",
+
+  "terms": {
+    "actuator": ["servo control unit", "control unit", "servo unit"],
+    "body assembly": ["main body", "body"],
+    "coordinator node": ["coordinator", "primary node"]
+  },
+
+  "titles": [
+    "Structural Repair Manual",
+    "Testing and Fault Isolation",
+    "Requirements after Job Completion"
+  ],
+
+  "placards": [
+    "SHORT-CIRCUIT TEST",
+    "DO NOT OPERATE",
+    "FASTEN SAFETY BELT"
+  ],
+
+  "proper_nouns": [
+    "United States of America",
+    "World Health Organization"
+  ],
+
+  "ing_nouns": [
+    "conditioning",
+    "streaming",
+    "indexing"
+  ]
+}
