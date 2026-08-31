@@ -21,3 +21,14 @@ __pycache__/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Filled change forms.
+#
+# The ASD change form is part of ASD-STE100 (Issue 9, page vi). Publishing a
+# filled copy would publish part of the standard, which the copyright notice
+# does not permit and which NOTICE.md says this repository does not do.
+#
+# The proposal content is in proposal.md and form-fields.txt. Regenerate the
+# form locally from your own copy of the blank form:
+#     python .change-proposals/fill_form.py CHANGE-FORM.docx form-fields.txt
+.change-proposals/**/*.docx

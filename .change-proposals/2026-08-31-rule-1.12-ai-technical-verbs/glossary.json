@@ -1,0 +1,6 @@
+{
+  "_comment": "Terms that this proposal uses as technical nouns, so that ste_check.py counts and classifies them correctly.",
+  "ing_nouns": ["writing", "engineering", "learning", "tuning", "embedding"],
+  "titles": ["Computer processes and applications"],
+  "terms": {}
+}
