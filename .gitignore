@@ -1,0 +1,23 @@
+# Local working inputs. Never committed.
+#
+# .input/.official/ holds ASD-STE100 Issue 9, the change form, and the STEMG
+# white paper. ASD-STE100 is free to obtain but not free to redistribute:
+# Issue 9, page 2, permits reproduction only with the written authority of an
+# officer of ASD, or by eight listed categories of organization. This project
+# is in none of them. Get your own copy from https://www.asd-ste100.org/
+#
+# .input/.skill/ holds a vendored copy of a third-party repository. It belongs
+# to its own author, not to this repository.
+.input/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
