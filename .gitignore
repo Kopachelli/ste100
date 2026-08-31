@@ -32,3 +32,4 @@ desktop.ini
 # form locally from your own copy of the blank form:
 #     python .change-proposals/fill_form.py CHANGE-FORM.docx form-fields.txt
 .change-proposals/**/*.docx
+.change-proposals/**/*.pdf
