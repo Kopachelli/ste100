@@ -9,12 +9,23 @@ that a maintenance technician cannot misread an instruction. It has two parts: 5
 rules in nine sections, and a controlled dictionary of 875 approved words. This repository
 implements what can be implemented from the rules alone, and says clearly what cannot.
 
-## Two things live here
+## What lives here
 
 | Path | What it is |
 |---|---|
-| [`skills/ste100/`](skills/ste100/) | The skill. Install it, or read it as a reference. |
+| [`skills/ste100/`](skills/ste100/) | **The skill.** The rules, the checker, the examples. |
+| [`.claude/commands/ste100.md`](.claude/commands/ste100.md) | **`/ste100`** — check or rewrite a target, now. |
+| [`.claude/agents/ste100.md`](.claude/agents/ste100.md) | **The agent.** Autonomous documentation work, with memory. |
+| [`.ste100/`](.ste100/) | Project memory and the terminology glossary. Committed. |
 | [`.change-proposals/`](.change-proposals/) | A filled ASD change form proposing one addition to Issue 9. |
+
+Three ways in, in order of how much you want to think:
+
+| | Use it when |
+|---|---|
+| `/ste100 <target>` | You know what you want checked or rewritten. |
+| `ste100` agent | The job is open-ended — "make our docs STE" — and needs scoping, memory, and questions asked first. |
+| `ste100` skill | You are doing the work yourself and want the rules and the checker. |
 
 ## The skill in one paragraph
 
@@ -50,11 +61,31 @@ reports carries the rule it came from.
 
 ```bash
 git clone https://github.com/Kopachelli/ste100
-cp -r ste100/skills/ste100 ~/.claude/skills/ste100
+cd ste100
+cp -r skills/ste100            ~/.claude/skills/ste100
+cp .claude/commands/ste100.md  ~/.claude/commands/ste100.md
+cp .claude/agents/ste100.md    ~/.claude/agents/ste100.md
 ```
 
+The skill alone is enough to start. Add the command and the agent to get `/ste100`
+and the `ste100` subagent in every project, not only this one.
+
 Then ask Claude to "rewrite this in STE", "check this against ASD-STE100", or "audit this
-procedure for STE violations".
+procedure for STE violations" — or run `/ste100 docs/install.md`.
+
+### The agent's memory
+
+The agent keeps two stores, split by who the knowledge belongs to.
+
+| Store | Where | Committed | Holds |
+|---|---|---|---|
+| Project | `.ste100/memory/` | Yes | Terminology rulings, scope decisions, audit history |
+| User | `~/.claude/agent-memory/ste100/` | No | Preferences, corrections, working style |
+
+Project memory is committed on purpose. STE prescribes a company terminology
+database, and a terminology decision belongs to the project and its team, not to
+whoever happened to make it. When the next person asks why the part is called the
+actuator and not the control unit, the answer is in the repository.
 
 You can also run the checker on its own, without Claude:
 

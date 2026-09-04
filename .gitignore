@@ -33,3 +33,6 @@ desktop.ini
 #     python .change-proposals/fill_form.py CHANGE-FORM.docx form-fields.txt
 .change-proposals/**/*.docx
 .change-proposals/**/*.pdf
+
+# Claude Code local overrides
+.claude/settings.local.json

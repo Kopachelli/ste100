@@ -1,0 +1,33 @@
+{
+  "_comment": "Project terminology for ste_check.py. Rules 1.8, 1.11 and 9.4 do not work without this file, and it is the part of STE that works fully without ASD's dictionary. The ste100 agent extends it. Refer to skills/ste100/references/dictionary-and-scope.md.",
+
+  "terms": {
+    "multi-word noun": ["noun cluster", "noun stack", "noun string"],
+    "technical noun": ["technical name"],
+    "checker": ["linter", "validator"]
+  },
+
+  "titles": [
+    "Simplified Technical English",
+    "Simplified Technical English Maintenance Group",
+    "Testing and Fault Isolation",
+    "Structural Repair Manual"
+  ],
+
+  "placards": [],
+
+  "proper_nouns": [
+    "Aerospace, Security and Defence Industries Association of Europe",
+    "United States of America"
+  ],
+
+  "ing_nouns": [
+    "writing",
+    "engineering",
+    "learning",
+    "tuning",
+    "embedding",
+    "counting",
+    "wording"
+  ]
+}
